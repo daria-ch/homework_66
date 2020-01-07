@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axiosApi from "../axios-api";
 import {Button, Card, CardBody, CardSubtitle, CardTitle} from 'reactstrap';
 import {Link} from "react-router-dom";
-import withLoaderHandler from "../components/hoc/withLoaderHandler";
+
 
 class Blog extends Component {
     state = {
@@ -35,4 +35,4 @@ class Blog extends Component {
     }
 }
 
-export default withLoaderHandler(Blog, axiosApi);
+export default Blog;

@@ -9,6 +9,8 @@ import Post from "./containers/Post";
 import EditPost from "./containers/EditPost";
 import About from "./containers/About";
 import Contacts from "./containers/Contacts";
+import withLoaderHandler from "./components/hoc/withLoaderHandler";
+import axiosApi from "./axios-api";
 
 function App() {
     return (
@@ -31,4 +33,4 @@ function App() {
     );
 }
 
-export default App;
+export default withLoaderHandler(App,axiosApi) ;
